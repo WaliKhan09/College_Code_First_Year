@@ -1,15 +1,40 @@
+// #include <stdio.h>
+
+// void main()
+// {
+//     int i, num, sum = 0;
+
+//     printf("Enter the number : ");
+//     scanf("%d", &num);
+
+//     for (i = 0; i <= num; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     printf("%d", sum);
+// }
+
 #include <stdio.h>
-
-void main()
+int main()
 {
-    int i, num, sum = 0;
+    int a, b, c;
+    printf("Enter three numbers n");
+    scanf("%d%d%d", &a, &b, &c);
 
-    printf("Enter the number : ");
-    scanf("%d", &num);
-
-    for (i = 0; i <= num; i++)
+    if (a > b)
     {
-        sum = sum + i;
+        if (a > c)
+            printf("%d is the largest number.", a);
+        else
+            printf("%d is the largest number.", c);
     }
-    printf("%d", sum);
+    else
+    {
+        if (b > c)
+            printf("%d is the largest number.", b);
+        else
+            printf("%d is the largest number.", c);
+    }
+
+    return 0;
 }

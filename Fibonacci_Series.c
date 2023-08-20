@@ -1,22 +1,15 @@
 #include <stdio.h>
-
 void main()
 {
-
-    int i, n, t1 = 0, t2 = 1;
-    int nextTerm = t1 + t2;
-
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
-
-    printf("Fibonacci Series: %d, %d, ", t1, t2);
-
-    for (i = 3; i <= n; i++)
+    int n1 = 0, n2 = 1, n3, i, number;
+    printf("Enter the number of elements:");
+    scanf("%d", &number);
+    printf("\n%d %d", n1, n2);
+    for (i = 2; i < number; ++i)
     {
-        printf("%d, ", nextTerm);
-        t1 = t2;
-        t2 = nextTerm;
-        nextTerm = t1 + t2;
+        n3 = n1 + n2;
+        printf(" %d", n3);
+        n1 = n2;
+        n2 = n3;
     }
-
 }
